@@ -24,9 +24,14 @@ function App() {
   const handleClick = (value: string)=>{
     if(value === "="){
       const result = calcResult(expression);
-      setResult(`=${result}`);
+      setResult(`= ${result}`);
     }else{
-      setExpression((prev)=>prev + value);
+      if(result !== ""){
+        setExpression(value);
+        setResult("");
+      }else{
+        setExpression((prev)=>prev + value);
+      }
     }
   }
   const calcResult = (exp: string): string=>{
