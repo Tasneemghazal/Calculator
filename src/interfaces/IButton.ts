@@ -1,4 +1,5 @@
 export  interface ButtonProps {
-    item: string|number;
+    item: string;
     className?: string;
+    onClick: (item:string)=>void;
 }

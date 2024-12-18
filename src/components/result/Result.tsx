@@ -1,10 +1,10 @@
 import { ResultProps } from '../../interfaces/IResult';
 import { ResultContainer } from './Result.style';
 
-function Result({expression}: ResultProps) {
+function Result({expression, result}: ResultProps) {
   return (
     <ResultContainer>
-        {expression}
+        {expression}{result}
     </ResultContainer>
   )
 }
