@@ -17,7 +17,7 @@ A simple calculator app built with React and styled-components, supporting basic
    ```bash
    git clone https://github.com/Tasneemghazal/Calculator.git
 
-2. cd caculatorApp
+2. cd calculatorApp
 3. Install dependencies:
    ```bash
    npm install
