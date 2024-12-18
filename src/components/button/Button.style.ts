@@ -10,4 +10,14 @@ export const NumberButton = styled.button`
   border-radius: 5px;
   margin: 10px;
   cursor: pointer;
+
+  &.equal{
+    grid-column: span 3;
+    background-color: aqua;
+    background-color: ${theme.color.lime_green};
+  }
+
+  &.operator{
+    background-color: ${theme.color.light_spring_green};
+  }
 `;
